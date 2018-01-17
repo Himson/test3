@@ -388,7 +388,7 @@ bool Armor::isCircleInside(vector<cv::Point2f>& armors,
 
 bool Armor::isFound()
 {
-    return is_last_found;
+    return is_last_found||last_found_2||last_found_3;
 }
 
 int Armor::getTargetX()

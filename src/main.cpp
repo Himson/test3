@@ -53,7 +53,7 @@ int main(int argc, char* argv[])
              << " " << armor.getTargetX()
              << " " << armor.getTargetY() << endl;
 
-        serial.sendTarget(armor.getTargetX(), armor.getTargetY(), armor.isFound()||armor.last_found_2||armor.last_found_3);
+        serial.sendTarget(armor.getTargetX(), armor.getTargetY(), armor.isFound());
 
         cv::waitKey(1);
     }
